@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/python3
 # Generates a tgz archive from contents of web_static dir
 
 import os.path
