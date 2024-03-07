@@ -7,7 +7,7 @@ from fabric.api import local
 
 
 def do_pack():
-    """Generates a tgz archive from contents of web_static directory"""
+    """Creates a tar gzipped archive of the directory web_static."""
 
     dt = datetime.utcnow()
 
