@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Generates a tgz archive from contents of web_static dir
+"""Generates a tgz archive from contents of web_static dir"""
 
 import os.path
 from datetime import datetime
