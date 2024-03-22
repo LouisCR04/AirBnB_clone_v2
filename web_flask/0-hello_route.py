@@ -7,10 +7,10 @@ app = Flask(__name__)
 
 
 @app.route("/", strict_slashes=False)
-def hbnb():
+def hello_hbnb():
     """Displays a message"""
     return "Hello HBNB!"
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0:5000")
+    app.run(host="0.0.0.0")
