@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""
-Displays “Python ”, followed by
-the value of the text variable
-(replace underscore _ symbols with a space )
-"""
+"""Display “n is a number” only if n is an integer"""
 
 from flask import Flask
 
@@ -30,6 +26,11 @@ def c_text(text):
 @app.route("/python/<text>", strict_slashes=False)
 def python(text="is cool"):
     return f"Python {text.replace('_', ' ')}"
+
+
+@app.route("/number/<int:n>", strict_slashes=False)
+def number(n):
+    return f"{n} is a number"
 
 
 if __name__ == "__main__":
